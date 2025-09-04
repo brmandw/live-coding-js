@@ -5,6 +5,12 @@ function cek(input, arr){
         nomor = arr[i]
     }
     if (input === nomor){
-        
+        return input
+    } else if (isNaN(input)){
+        return "inputan harus angka"
+    } else{
+        return false
     }
 }
+
+console.log(cek(3, array))
