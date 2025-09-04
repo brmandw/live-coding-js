@@ -5,11 +5,12 @@ function cek(input, arr){
         return "input harus angka"
     }
 
-    if (arr.includes(input)){ 
-        return input
-    } else{
+    for(let i = 0; i < arr.length; i++ ){
+        if (input === arr[i]){
+            return input
+        }
         return false
     }
 }
 
-console.log(cek(0, array))
+console.log(cek(8, array))
