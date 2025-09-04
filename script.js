@@ -5,6 +5,8 @@ function cek(input, arr){
         nomor = arr[i] // ambil semua array
     }
 
+    console.log(nomor)
+
     if (input === nomor){ 
         return input
     } else if (isNaN(input)){
